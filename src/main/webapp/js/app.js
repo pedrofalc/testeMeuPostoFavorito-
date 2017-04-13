@@ -1,4 +1,5 @@
 var app = (function() {
+  
   return angular.module('MyApp', [
       'ui.router',
       'ui.select',
