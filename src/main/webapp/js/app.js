@@ -80,8 +80,8 @@ var app = (function() {
 
         .state('home', {
           url: "/home",
-          controller: 'HomeController',
-          templateUrl: 'views/logged/home.view.html'
+          controller: 'TesteController',
+          templateUrl: 'views/teste.view.html'
         })
 
         .state('home.pages', {

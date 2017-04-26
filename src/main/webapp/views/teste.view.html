@@ -1,39 +1,30 @@
-<div data-container="true" id="starter"><div class="component-holder ng-binding ng-scope" data-component="crn-navbar" data-attribute-preview="" id="crn-navbar-346178"><nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand component-holder" data-component="crn-anchor" href="#">Project name</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown component-holder selected-holder" data-component="crn-menu-item">
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <span>Menu Item</span> 
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#" class="component-holder" data-component="crn-anchor">Action Item</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+<div data-container="true" id="starter">
+  <div class="component-holder ng-binding ng-scope" data-component="crn-navbar" data-attribute-preview="" id="crn-navbar-346178">
+    <nav class="navbar navbar-default"> 
+      <div class="container-fluid"> 
+        <div class="navbar-header"> 
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+          <a class="navbar-brand component-holder" data-component="crn-anchor" href="#">Project name</a> 
+        </div> 
+        <div id="navbar" class="navbar-collapse collapse"> 
+          <ul class="nav navbar-nav"> 
+            <li class="dropdown component-holder selected-holder" data-component="crn-menu-item"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span>Menu Item</span> <span class="caret"></span> </a> 
+              <ul class="dropdown-menu"> 
+                <li><a href="#" class="component-holder" data-component="crn-anchor">Action Item</a></li> 
+              </ul> </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </nav>
   </div>
-</nav></div></div>
-<h3>User</h3>
-
+</div> 
+<h3>User</h3> 
 <div data-component="crn-datasource" id="crn-datasource-763276"> 
-   <datasource name="User" entity="/api/security/User" keys="id" rows-per-page="100" delete-message="Deseja remover?"></datasource> 
+  <datasource name="User" entity="/api/security/User" keys="id" rows-per-page="100" delete-message="Deseja remover?"></datasource> 
 </div> 
 <div data-component="crn-button" id="crn-button-564202"> 
   <button class="btn btn-primary" type="submit" onclick="" ng-click="User.startInserting()" ng-hide="User.inserting || User.editing"><i class="fa fa-user"></i> <span>{{"template.crud.new" | translate}}</span></button> 
 </div> 
-
-   
 <div data-component="crn-form" id="crn-form-form-User"> 
   <div class="form" ng-show="User.editing || User.inserting"> 
     <form crn-datasource="User"> 
@@ -49,100 +40,66 @@
         <button class="btn btn-danger" ng-click="datasource.cancel()"><i class="glyphicon glyphicon-remove"></i></button> 
       </div> 
       <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting"> 
-        
         <div data-component="crn-textinput" id="crn-textinput-email"> 
           <div class="form-group"> 
-          
             <label for="textinput-email">email</label> 
-        
-        <input type="text" ng-model="User.active.email" class="form-control" id="textinput-email" placeholder="email"> 
-
+            <input type="text" ng-model="User.active.email" class="form-control" id="textinput-email" placeholder="email"> 
           </div> 
         </div> 
-        
         <div data-component="crn-textinput" id="crn-textinput-name"> 
           <div class="form-group"> 
-          
             <label for="textinput-name">name</label> 
-        
-        <input type="text" ng-model="User.active.name" class="form-control" id="textinput-name" placeholder="name" required="required"> 
-
+            <input type="text" ng-model="User.active.name" class="form-control" id="textinput-name" placeholder="name" required> 
           </div> 
         </div> 
-        
         <div data-component="crn-textinput" id="crn-textinput-login"> 
           <div class="form-group"> 
-          
             <label for="textinput-login">login</label> 
-        
-        <input type="text" ng-model="User.active.login" class="form-control" id="textinput-login" placeholder="login" required="required"> 
-
+            <input type="text" ng-model="User.active.login" class="form-control" id="textinput-login" placeholder="login" required> 
           </div> 
         </div> 
-        
         <div data-component="crn-textinput" id="crn-textinput-picture"> 
           <div class="form-group"> 
-          
             <label for="textinput-picture">picture</label> 
-        
-        <input type="text" ng-model="User.active.picture" class="form-control" id="textinput-picture" placeholder="picture"> 
-
+            <input type="text" ng-model="User.active.picture" class="form-control" id="textinput-picture" placeholder="picture"> 
           </div> 
         </div> 
-        
         <div data-component="crn-textinput" id="crn-textinput-password"> 
           <div class="form-group"> 
-          
-            <label for="textinput-password">password
-            
-             <input type="password" ng-model="User.active.password" class="form-control" id="textinput-password" placeholder="password" required="required" ng-minlength="3"> 
-          </label> 
-         
-         
-        </div>
-         </div>
+            <label for="textinput-password">password</label> 
+            <input type="password" ng-model="User.active.password" class="form-control" id="textinput-password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[@!#$%¨&*()])(?=.*[A-Z]).{8,}" title="É preciso que sua senha tenha pelo menos 8 caracteres com letras maiúsculas e minúsculas, números, caracteres especiais( !@#$%¨&*() )."> 
+          </div> 
+        </div> 
         <div data-component="crn-textinput" id="crn-textinput-theme"> 
           <div class="form-group"> 
-          
             <label for="textinput-theme">theme</label> 
-        
-        <input type="text" ng-model="User.active.theme" class="form-control" id="textinput-theme" placeholder="theme"> 
-
+            <input type="text" ng-model="User.active.theme" class="form-control" id="textinput-theme" placeholder="theme"> 
           </div> 
         </div> 
-         </fieldset>
-        <div data-component="crn-textinput" id="crn-textinput-Role"> 
-          <div class="form-group"> 
-          
-        <div data-component="crn-datasource">
-          <datasource append="false" name="Rolle" entity="/api/security/User/{{User.active.id}}/Role" keys="id" rows-per-page="100" lazy="true" auto-post="true" enabled="{{User.editing}}"></datasource> 
-          <datasource name="AllRole" entity="/api/security/Role" keys="id" rows-per-page="100" enabled="{{User.editing}}"></datasource> 
-        </div>
-        
-        <div class="form-group" ng-show="datasource.editing">
-          <label for="select-ui">Role</label> 
-          <div id="select-ui" data-component="crn-tags"> 
-            <ui-select multiple="" crn-datasource="AllRole" ng-model="Role.data" class="crn-select" style="min-width: 200px" theme="bootstrap" enabled="{{User.editing}}"> 
-              <ui-select-match placeholder="Role...">
-                 {{$item.name }} 
-              </ui-select-match> 
-              <ui-select-choices repeat="rowData in datasource.data | filter : $select.search"> 
-                <div data-container="true" draggable="true">
-                   {{rowData.name}} 
-                </div> 
-              </ui-select-choices> 
-            </ui-select> 
-          </div>
-        </div>
-  
-
+      </fieldset> 
+      <div data-component="crn-textinput" id="crn-textinput-Role"> 
+        <div class="form-group"> 
+          <div data-component="crn-datasource"> 
+            <datasource append="false" name="Rolle" entity="/api/security/User/{{User.active.id}}/Role" keys="id" rows-per-page="100" lazy="true" auto-post="true" enabled="{{User.editing}}"></datasource> 
+            <datasource name="AllRole" entity="/api/security/Role" keys="id" rows-per-page="100" enabled="{{User.editing}}"></datasource> 
+          </div> 
+          <div class="form-group" ng-show="datasource.editing"> 
+            <label for="select-ui">Role</label> 
+            <div id="select-ui" data-component="crn-tags"> 
+              <ui-select multiple crn-datasource="AllRole" ng-model="Role.data" class="crn-select" style="min-width: 200px" theme="bootstrap" enabled="{{User.editing}}"> 
+                <ui-select-match placeholder="Role...">
+                   {{$item.name }} 
+                </ui-select-match> 
+                <ui-select-choices repeat="rowData in datasource.data | filter : $select.search"> 
+                  <div data-container="true" draggable="true">
+                     {{rowData.name}} 
+                  </div> 
+                </ui-select-choices> 
+              </ui-select> 
+            </div> 
           </div> 
         </div> 
-    
-      
-      
-    
-      
+      </div> 
     </form> 
   </div> 
 </div> 
